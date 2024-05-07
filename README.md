@@ -10,6 +10,7 @@ Propósito é um app que permite inserir e remover os itens na lista de carrinho
 * CSS
 * JavaScript
 * Icons: [Bootstrap Icons](https://icons.getbootstrap.com)
+* [Google Fonts](https://fonts.google.com/)
 
 ## Referências
 Projeto desenvolvido acompanhando conteúdo no Youtube, canal do [Gustavo Neitzke](https://www.youtube.com/@GustavoNeitzke).
