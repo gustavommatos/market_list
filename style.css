@@ -1,17 +1,18 @@
 :root{
-    --color-Branco: rgb(255, 250, 250);
-    --color-Fundo1: rgb(65,105,225);
-    --color-Fundo2: rgb(25,25,112);
-    --color-Adicionar2: rgb(46, 139, 87);
-    --color-Adicionar1: rgb(60, 179, 113);
-    --color-Remover2: rgb(128, 0, 0);
-    --color-Remover1: rgb(178, 34, 34);
+    --color-Fundo1: #f6f62c;
+    --color-Fundo2: #CFB53B;
+    --color-FundoIcon: #FFFFFF;
+    --color-Fontes: #2F2F4F;
+    --color-Adicionar2: #006600;
+    --color-Adicionar1: #009900;
+    --color-Remover2: #990000;
+    --color-Remover1: #CC0000;
 }
 
 body{
     font-family: 'Roboto';
     background-color: var(--color-Fundo1);
-    color: var(--color-Branco);
+    color: var(--color-Fontes);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -46,7 +47,7 @@ body{
 
 #btn-novo-item{
     background-color: var(--color-Adicionar1);
-    color: var(--color-Branco);
+    color: var(--color-FundoIcon);
     border-radius: 50%;
     width: 50px;
     height: 50px;
@@ -84,7 +85,7 @@ body{
 #btn-remover{
     border: none;
     background-color: var(--color-Remover1);
-    color: var(--color-Branco);
+    color: var(--color-FundoIcon);
     padding: .4rem .8rem;
     border-radius: 50%;
     width: 50px;
