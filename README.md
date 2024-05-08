@@ -2,7 +2,7 @@
 ## Projeto To-do list para lista de mercado
 Propósito é um app que permite inserir e remover os itens na lista de carrinho. Exemplo na imagem abaixo.
 
-![image](https://github.com/gustavommatos/market_list/assets/65467858/13fa5249-18d2-49a7-af05-2b42507ebd40)
+![image](https://github.com/gustavommatos/market_list/assets/65467858/2fc9cd59-0e33-4b1c-92af-30527167b983)
 
 ## Tecnologias e ferramentas utilizadas
 * Código: [VS Code](https://code.visualstudio.com/download)
