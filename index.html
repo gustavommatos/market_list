@@ -9,21 +9,35 @@
     <title>Lista de Mercado</title>
 </head>
 <body>
-    <h1>MINHA LISTA DE MERCADO</h1>
-    <div class="content">
-        <div class="content--add-item">
-            <input type="text" id="input-novo-item" placeholder="Digite o nome do item aqui!">
-            <button onclick="novoItem()" id="btn-novo-item" title="Clique aqui para adicionar ao carrinho">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart-plus-fill" viewBox="0 0 16 16">
-                    <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0m7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0M9 5.5V7h1.5a.5.5 0 0 1 0 1H9v1.5a.5.5 0 0 1-1 0V8H6.5a.5.5 0 0 1 0-1H8V5.5a.5.5 0 0 1 1 0"/>
-                  </svg>
-            </button>
-        </div>
-        <div class="content--body">
-            <ol id="market-list">
-            </ol>
-        </div>
-    </div>
+    <header>
+        <h1>MINHA LISTA DE MERCADO</h1>
+    </header>
+    <main class="content">
+        <!-- Seção para adicionar um novo item -->
+        <section class="content--add-item">
+            <form id="item-form">
+                <label for="input-novo-item">Digite o nome do item:</label>
+                <input type="text" id="input-novo-item" placeholder="Ex.: Arroz - 1und" aria-label="Novo item">
+                <button type="submit" id="btn-novo-item" title="Clique aqui para adicionar ao carrinho">
+                    <!-- Ícone de adicionar item -->
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart-plus" viewBox="0 0 16 16">
+                        <path d="M9 5.5a.5.5 0 0 0-1 0V7H6.5a.5.5 0 0 0 0 1H8v1.5a.5.5 0 0 0 1 0V8h1.5a.5.5 0 0 0 0-1H9z"/>
+                        <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1zm3.915 10L3.102 4h10.796l-1.313 7zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0m7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0"/>
+                    </svg>
+                </button>
+            </form>
+        </section>
+        <!-- Seção para listar os itens no carrinho -->
+        <section class="content--body" id="shopping-list-section">
+            <h2>Itens no Carrinho</h2>
+            <ol id="market-list"></ol>
+        </section>
+        <!-- Seção para listar os itens comprados/removidos -->
+        <section class="content--body" id="bought-list-section" style="display:none;">
+            <h2>Itens Comprados/Removidos</h2>
+            <ol id="bought-list"></ol>
+        </section>
+    </main>
+    <script src="script.js"></script>
 </body>
-<script src="script.js"></script>
 </html>
